@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations.
+ */
+
+declare(strict_types=1);
+
+use Drupal\Core\Hook\Attribute\LegacyHook;
+use Drupal\no_more_hooks\Hook\UserHooks;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_user_login().
+ */
+#[LegacyHook]
+function no_more_hooks_user_login(UserInterface $account): void {
+  \Drupal::service(UserHooks::class)->myCustomMethodName($account);
+}

@@ -1,0 +1,5 @@
+name: 'No more hooks'
+type: module
+description: 'Testing OO hooks.'
+package: Custom
+core_version_requirement: ^10 || ^11

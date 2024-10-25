@@ -1,0 +1,4 @@
+services:
+  Drupal\no_more_hooks\Hook\UserHooks:
+    class: Drupal\no_more_hooks\Hook\UserHooks
+    autowire: true
